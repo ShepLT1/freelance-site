@@ -1,8 +1,10 @@
 import Head from 'next/head'
 import { Grid } from 'semantic-ui-react'
+import Nav from '../components/Nav'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
+
   return (
     <div className={styles.container}>
       <div className={styles.overlay}>
@@ -10,6 +12,7 @@ export default function Home() {
           <title>Create Next App</title>
           <link rel="icon" href="/favicon.ico" />
         </Head>
+        <Nav />
         <Grid centered stackable className={styles.main}>
           <Grid.Row columns={3}>
             <Grid.Column className={styles.col}>
